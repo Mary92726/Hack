@@ -58,7 +58,7 @@ local StatsUtils = require(RobloxGui.Modules.Stats.StatsUtils)
 while PlayersService.LocalPlayer == nil do PlayersService.ChildAdded:wait() end
 local Player = PlayersService.LocalPlayer
 -- GuiRoot will act as the top-node for parenting GUIs
-local GuiRoot = Instance.new('Frame')
+local GuiRoot = Instance.newPlayer('Frame')
 GuiRoot.Name = 'GuiRoot';
 GuiRoot.Size = UDim2.new(1,0,1,0);
 GuiRoot.BackgroundTransparency = 1;
